@@ -150,7 +150,6 @@ const images = [
     "149.jpg",
     "150.jpg",
     "151.jpg"
-
 ];
 
 let currentIndex = 0;
@@ -172,7 +171,7 @@ function nextImage(choice) {
     updateCounts();
 
     currentIndex = (currentIndex + 1) % images.length;
-    document.getElementById("image").src = "images/" + images[currentIndex];
+    document.getElementById("image").src = images[currentIndex];
 }
 
 // Initialize counts
